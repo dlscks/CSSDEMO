@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+      /*
+         float
+         1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다.
+         2. float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠 있다.
+        */
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both; /*float 해제*/
+      }
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        캘리포니아주 법무부는 아마존이 어떻게 경쟁사 플랫폼에 제품을 더 저렴하게
+        내놓은 판매자들을 어떻게 제재했는지에 주목했다. 원고 측 주장에 따르면
+        아마존은 경쟁사 사이트에 더 저렴한 가격을 제시한 제품이 포착되면 제품을
+        눌렀을 때 오른쪽에 뜨는 '당장 구매', '장바구니로 이동' 등 버튼을
+        없애기도 했다. 소비자들 입장에서는 제품이 마음에 들어도 구매 버튼이 뜨지
+        않으면 다른 제품을 찾아볼 수밖에 없고 이는 판매자에게는 막대한 타격으로
+        돌아온다는 지적이다.
+      </p>
+    </div>
+  </body>
+</html>
