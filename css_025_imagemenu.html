@@ -12,8 +12,13 @@
         border-width: 0;
       }
 
-      body {
+      /* body {
         margin-left: 10px;
+      } */
+
+      body div.wrap {
+        width: 1208px;
+        margin: 10px auto; /* top/bottom    right/left*/
       }
 
       h1 {
@@ -26,16 +31,54 @@
       ul.mainMenu {
         width: 1208px;
         height: 104px;
-        background-color: yellow;
+        /* background-color: yellow; */
         border-left: 2px solid;
+        list-style-type: none;
       }
 
       ul.mainMenu li {
         border: 2px solid;
         float: left;
+        border-left-width: 0;
+      }
+
+      ul.mainMenu li a {
+        display: block;
         width: 300px;
         height: 100px;
-        border-left-width: 0;
+        text-indent: -2000px;
+      }
+
+      ul.mainMenu li.mail a {
+        background-image: url(images/mail.gif);
+      }
+
+      ul.mainMenu li.cafe a {
+        background-image: url(images/cafe.gif);
+      }
+
+      ul.mainMenu li.blog a {
+        background-image: url(images/blog.gif);
+      }
+
+      ul.mainMenu li.kin a {
+        background-image: url(images/kin.gif);
+      }
+
+      ul.mainMenu li.mail a:hover {
+        background-position: right bottom; /*300px 0px;*/
+      }
+
+      ul.mainMenu li.cafe a:hover {
+        background-position: 300px 0px;
+      }
+
+      ul.mainMenu li.blog a:hover {
+        background-position: right bottom;
+      }
+
+      ul.mainMenu li.kin a:hover {
+        background-position: 300px 0px;
       }
     </style>
   </head>
