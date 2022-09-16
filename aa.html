@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{list-style: none;}
+        a{text-decoration: none;}
+
+        header{
+            width: 800px;
+            height: 95px;
+            background-color: yellow;
+            position: fixed;
+        }
+        #logo{
+            position: fixed;
+            top: 50px;
+            left: 30px;
+        }
+
+        #top_menu{
+            position: relative;
+            top: 30px;
+            float: right; 
+        }
+        
+        #top_menu a{
+            font-size: 14px; color: black;
+        }
+        nav{
+            position: absolute;
+            top: 10px;
+            left: 220px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id='page'>
+
+        <header>
+        <div id='logo'></div>
+            <img src='images/logo.gif' alt='logo'>
+        </div>
+
+        <div id='top_menu'>
+            <a href='#'>로그인</a>
+            <a href='#'>회원가입</a>
+            <a href='#'>마이페이지</a>
+            <a href='#'>이용안내</a>
+            <a href='#'>고객센터</a>
+            
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href='#'>상세페이지</a></li>
+                <li><a href='#'>장바구니</a></li>
+                <li><a href='#'>고객갤러리</a></li>
+                <li><a href='#'>주문배송</a></li>
+                <li><a href='#'>자주 하는 질문</a></li>
+
+            </ul>
+        </nav>
+        </header>
+    </div>
+</body>
+</html>
